@@ -19,6 +19,7 @@
   <img src="https://img.shields.io/badge/FreeRTOS-real--time-147D92?style=flat-square" alt="FreeRTOS">
   <img src="https://img.shields.io/badge/ESP32--S3-ESP--IDF-147D92?style=flat-square&logo=espressif" alt="ESP32-S3 and ESP-IDF">
   <img src="https://img.shields.io/badge/MQTT-device%20telemetry-3977A8?style=flat-square" alt="MQTT">
+  <img src="https://img.shields.io/badge/K230-YOLO%20vision-3977A8?style=flat-square" alt="K230 YOLO vision">
 </p>
 
 ## 代表项目
@@ -41,11 +42,24 @@
 
 [查看架构、验证记录与精选源码 →](https://github.com/mamorrozer/mspm0-h-contest-showcase)
 
+### K230 钢球视觉部署与控制侧准备
+
+从车载系统中拆出视觉子系统，单独记录固定输入尺寸 YOLO、K230 板端速度对比、目标框筛选、管道轴线投影、位置/速度平滑，以及向主控发送诊断数据前的校准边界。352×192 版本在本地 LCD 测试中约 28 FPS，512×288 版本约 20 FPS；ROI 版本因板端零检出被保留为失败对照，不作为完成指标。
+
+[查看视觉部署、测量记录与控制交接 →](https://github.com/mamorrozer/k230-steel-ball-vision)
+
+<p align="center">
+  <a href="https://github.com/mamorrozer/k230-steel-ball-vision">
+    <img src="https://raw.githubusercontent.com/mamorrozer/k230-steel-ball-vision/main/docs/architecture.svg" alt="K230 steel-ball vision pipeline" width="92%">
+  </a>
+</p>
+
 ## 技术方向
 
 | 方向 | 项目中使用的技术 |
 |---|---|
 | MCU 与固件 | C、STM32F407、TI MSPM0G3507、ESP32-S3 |
+| 视觉与部署 | Python、YOLO、K230/CanMV、固定输入尺寸、坐标投影 |
 | 实时系统 | FreeRTOS 任务、周期调度、队列、运行状态观测 |
 | 外设与通信 | UART、I²C、SPI、CRC16、MQTT |
 | 构建与验证 | ESP-IDF、CMake、CTest、串口日志与双板联调 |
