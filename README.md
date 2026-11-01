@@ -14,6 +14,10 @@
 </p>
 
 <p align="center">
+  <sub>这个仓库是 GitHub 主页的 Profile README，会自动显示在个人主页顶部；下面的仓库卡片用于展示可独立阅读的工程。</sub>
+</p>
+
+<p align="center">
   <img src="https://img.shields.io/badge/C-embedded-173B5E?style=flat-square&logo=c" alt="C">
   <img src="https://img.shields.io/badge/STM32F407-Cortex--M4-173B5E?style=flat-square&logo=stmicroelectronics" alt="STM32F407">
   <img src="https://img.shields.io/badge/FreeRTOS-real--time-147D92?style=flat-square" alt="FreeRTOS">
@@ -23,6 +27,12 @@
 </p>
 
 ## 代表项目
+
+| 项目 | 侧重点 | 入口 |
+|---|---|---|
+| **FreeRTOS 双 MCU 遥测** | 实时任务、队列、UART、MQTT、断线恢复 | [仓库](https://github.com/mamorrozer/f407-freertos-esp32-telemetry) |
+| **MSPM0 H 题车载系统** | 主控软件、循迹、视觉协作、状态机与安全停车 | [精选仓库](https://github.com/mamorrozer/mspm0-h-contest-showcase) |
+| **K230 钢球视觉** | YOLO 部署、板端速度/精度比较、坐标交接 | [视觉仓库](https://github.com/mamorrozer/k230-steel-ball-vision) |
 
 ### STM32F407 + FreeRTOS 环境遥测终端
 
