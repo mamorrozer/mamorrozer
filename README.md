@@ -10,11 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/mamorrozer/f407-freertos-esp32-telemetry">FreeRTOS 遥测终端</a>
-  &nbsp;·&nbsp;
-  <a href="https://github.com/mamorrozer/STM32">STM32 外设练习</a>
-  &nbsp;·&nbsp;
-  <a href="https://github.com/mamorrozer/C51">C51 项目归档</a>
+  <a href="https://github.com/mamorrozer/f407-freertos-esp32-telemetry">查看 FreeRTOS 双 MCU 遥测终端</a>
 </p>
 
 <p align="center">
@@ -38,11 +34,6 @@
     <img src="https://raw.githubusercontent.com/mamorrozer/f407-freertos-esp32-telemetry/main/docs/assets/architecture.svg" alt="F407 sensor acquisition and TFT, UART telemetry to ESP32-S3, Wi-Fi and MQTT" width="92%">
   </a>
 </p>
-
-## 更多实践
-
-- [STM32 外设与板级练习](https://github.com/mamorrozer/STM32)：ADC、定时器、串口、I²C、RTC、BLE 与电机相关的独立练习。
-- [C51 单片机学习与项目集](https://github.com/mamorrozer/C51)：AT24C02、蜂鸣器/数码管练习与塔防小游戏。
 
 ## 技术方向
 
