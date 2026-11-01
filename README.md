@@ -23,8 +23,8 @@
 | 项目 | 侧重点 | 入口 |
 |---|---|---|
 | **FreeRTOS 双 MCU 遥测** | 实时任务、队列、UART、MQTT、断线恢复 | [仓库](https://github.com/mamorrozer/f407-freertos-esp32-telemetry) |
-| **MSPM0 H 题车载系统** | 主控软件、循迹、视觉协作、状态机与安全停车 | [精选仓库](https://github.com/mamorrozer/mspm0-h-contest-showcase) |
 | **K230 钢球视觉** | YOLO 部署、板端速度/精度比较、坐标交接 | [视觉仓库](https://github.com/mamorrozer/k230-steel-ball-vision) |
+| **MSPM0 H 题车载系统** | 主控软件、循迹、视觉协作、状态机与安全停车 | [精选仓库](https://github.com/mamorrozer/mspm0-h-contest-showcase) |
 
 ### 01 · STM32F407 + FreeRTOS 环境遥测终端
 
@@ -38,13 +38,7 @@
   </a>
 </p>
 
-### 02 · MSPM0 H 题车载平衡滚球系统
-
-2026 年全国大学生电子设计竞赛广东赛区省级三等奖团队项目。我主导 MSPM0 主控软件和系统集成，涉及八路循迹、K230 钢球视觉、步进摆杆、状态机与安全停车。精选仓库说明实测边界，并展示代表性算法模块；不包含完整烧录工程。
-
-[查看架构、验证记录与精选源码 →](https://github.com/mamorrozer/mspm0-h-contest-showcase)
-
-### 03 · K230 钢球视觉部署与控制侧准备
+### 02 · K230 钢球视觉部署与控制侧准备
 
 从车载系统中拆出视觉子系统，单独记录固定输入尺寸 YOLO、K230 板端速度对比、目标框筛选、管道轴线投影、位置/速度平滑，以及向主控发送诊断数据前的校准边界。352×192 版本在本地 LCD 测试中约 28 FPS，512×288 版本约 20 FPS；ROI 版本因板端零检出被保留为失败对照，不作为完成指标。
 
@@ -55,6 +49,12 @@
     <img src="https://raw.githubusercontent.com/mamorrozer/k230-steel-ball-vision/main/docs/architecture.svg" alt="K230 steel-ball vision pipeline" width="92%">
   </a>
 </p>
+
+### 03 · MSPM0 H 题车载平衡滚球系统
+
+2026 年全国大学生电子设计竞赛广东赛区省级三等奖团队项目。我主导 MSPM0 主控软件和系统集成，涉及八路循迹、K230 钢球视觉、步进摆杆、状态机与安全停车。精选仓库说明实测边界，并展示代表性算法模块；不包含完整烧录工程。
+
+[查看架构、验证记录与精选源码 →](https://github.com/mamorrozer/mspm0-h-contest-showcase)
 
 ## 技术方向
 
